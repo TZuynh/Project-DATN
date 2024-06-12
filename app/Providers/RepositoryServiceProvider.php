@@ -19,3 +19,4 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->singleton(RoleRepositoryInterface::class, RoleRepository::class);
     }
 }
+

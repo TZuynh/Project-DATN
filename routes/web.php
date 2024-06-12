@@ -12,11 +12,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::group(['middleware' => 'web'], function () {
-    Route::get('/', function () {
-        return view('welcome');
-    });
-
-    include 'v1/web/admin.php';
+Route::get('/test', function () {
+    return view('user.homepage.index');
 });
